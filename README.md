@@ -22,7 +22,7 @@ A Personal Project by AJ Beiza Showcasing Data Collection, Data Prepatation, Dat
 
 ## Differentiating Olympic Matches
 
-#### In the dataset olympic matches are listed as being at the same level as ATP 250 & ATP 500 matches, which I do not feel is accurate. The meaning of winning an olympic is far different than winning a mere ATP 250. I had to feature engineer this differentiation
+#### In the dataset, Olympic matches are listed as being at the same level as ATP 250 & ATP 500 matches, which I do not feel is accurate. The meaning of winning at an Olympics is far different from winning a mere ATP 250. Thus, the two tournament levels need to be differentiated.
 
 ```
 def code_olympics(row):

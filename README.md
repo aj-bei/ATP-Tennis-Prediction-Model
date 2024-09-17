@@ -151,7 +151,7 @@ match_df = match_df.drop(columns=["p1_hand", "p2_hand"])
 
 ## Model Analysis
 
-#### I know how these models perform overall, but how do they perform across different playing surfaces or across different tournament levels. Is one model more likely to predict upsets on certain surfaces or in certain tournament levels? To test this, I diveded a testing dataframe into different surfaces and different tournament levels and plotted all of the models' accuracy across different surfaces and tournament levels.
+#### I know how these models perform overall, but how do they perform across different playing surfaces or across different tournament levels. Is one model more likely to predict upsets on certain surfaces or in certain tournament levels? To test this, I divided a testing dataframe into different surfaces and different tournament levels and plotted all of the models' accuracy across different surfaces and tournament levels.
 
 ![image](https://github.com/user-attachments/assets/ea1da441-71f9-42f1-8fdf-e54e9458b6e5)
 

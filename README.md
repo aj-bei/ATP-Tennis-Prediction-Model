@@ -159,6 +159,8 @@ match_df = match_df.drop(columns=["p1_hand", "p2_hand"])
 
 # Future Room for Improvement (TODO list):
 
+- One current flaw of this model is very slight data leakage. Aggregate player statistics currently are calculated for all matches that a player has played. This means that the model has access to current player statistics. For older matches, this means that the model has access to more recent player statistics. Players do not often change statistics like serve % very drastically through their career but this is certainly a point of interest for the project for optimization. Am currently developing a way to fix this, but this is a very resource intensive calculation.
+
 - Changing each aggregate performance metric (ie: %first serves made or %break points converted) to incorporate a “penalty” value that rewards recent (last 4-6 months) improvements to performance metrics. Currently the only statistic to implement this is the recent performance metric. This would mean statistics would be more representative of the player right now, as players are always working with coaches to get certain statistics up.
 
 - Adding a head to head feature for both players prior to every match in dataset. I avoided doing this because my computer lacks computational resources and I know that calculating this is a very resource intensive calculation.
